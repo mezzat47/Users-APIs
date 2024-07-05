@@ -45,4 +45,33 @@ This project is a Laravel API to list, create, update, and delete users with OAu
   php artisan storage:link
 
 ```
+7- Run the Laravel development server:
+```bash
+  php artisan serve
 
+```
+
+## Postman Collection
+
+A Postman collection for testing the APIs is provided in the repository. You can find it in the `Postman-Collection` directory. To use it:
+
+1. Open Postman.
+2. Click on `Import`.
+3. Select the file from the `Postman-Collection` directory.
+4. Start testing the APIs.
+
+## Features
+
+- List, create, update, show and delete users.
+- OAuth2 authentication with Laravel Passport.
+- CORS enabled.
+- Rate limit of 20 requests per minute on all endpoints.
+
+## Authentication
+
+- Public method for viewing users.
+- Protected methods for creating, updating, and deleting users (requires login).
+
+## Rate Limiting
+
+All endpoints are rate-limited to 20 requests per minute.
